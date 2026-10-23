@@ -3,7 +3,7 @@ const express = require("express");
 const todoItemsRouter = express.Router();
 
 // Local Module
-const todoItemsController = require("../controllers/todoItemsController");
+const todoItemsController = require("../Controllers/todoItemsController");
 
 todoItemsRouter.get("/", todoItemsController.getTodoItems);
 todoItemsRouter.post("/", todoItemsController.createTodoItem);
